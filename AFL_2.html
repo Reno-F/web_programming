@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> AFL 2 </title>
+    </head>
+    <body>
+        <h1> JAWABAN NOMOR 1A </h1>
+        <h3> Konversi Mata Uang </h3>
+        <p> USD 1 = Rp <input type="text" value="14.000" id="initialPrice"></p>
+        <p> USD <input type="text" id="inputUser">
+            <button type="button" onclick="konversi()">Konversi</button>
+        </p>
+        <p id="result"></p>
+
+        <script>
+            function konversi() {
+                var initial = document.getElementById("initialPrice").value;
+                var usd = document.getElementById("inputUser").value;
+
+                var rupiah = initial * usd * 1000;
+
+                document.getElementById("result").innerHTML = ("Rp " + rupiah);
+            }
+        </script>
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> AFL 2 </title>
+    </head>
+    <body>
+        <h1> JAWABAN NOMOR 1B </h1>
+        <h3> Konversi Mata Uang </h3>
+        <p> USD 1 = Rp <input type="text" value="14.000" id="initialPrice"></p>
+        <p> USD <input type="text" id="inputUser" onclick="konversi()"></p>
+        <p id="result"></p>
+
+        <script>
+            function konversi() {
+                var initial = document.getElementById("initialPrice").value;
+                var usd = document.getElementById("inputUser").value;
+
+                var rupiah = initial * usd * 1000;
+
+                document.getElementById("result").innerHTML = ("Rp " + rupiah);
+            }
+        </script>
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> AFL 2 </title>
+    </head>
+    <body>
+        <h1> JAWABAN NOMOR 1C </h1>
+        <h3> Konversi Mata Uang </h3>
+        <p> USD 1 = Rp <input type="text" value="14.000" id="initialPrice"></p>
+        <p> USD <input type="text" id="inputUser" oninput="konversi()"></p>
+        <p id="result"></p>
+
+        <script>
+            function konversi() {
+                var initial = document.getElementById("initialPrice").value;
+                var usd = document.getElementById("inputUser").value;
+
+                var rupiah = initial * usd * 1000;
+
+                document.getElementById("result").innerHTML = ("Rp " + rupiah);
+            }
+        </script>
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> AFL 2 </title>
+    </head>
+    <body>
+        <h1> JAWABAN NOMOR 1D </h1>
+        <h3> Konversi Mata Uang </h3>
+        <p> USD 1 = Rp <input type="text" value="14.000" id="initialPrice"></p>
+        <p> USD <input type="text" id="inputUserA">
+            = Rp <input type="text" id="inputUserB">
+            <button type="button" onclick="konversi()">Konversi</button>
+        </p>
+        <p id="resultA"></p>
+        <p id="resultB"></p>
+
+        <script>
+            function konversi() {
+                var initial = document.getElementById("initialPrice").value;
+                var usd = document.getElementById("inputUserA").value;
+                var rupiah = document.getElementById("inputUserB").value;
+
+                var hasilA = initial * usd * 1000;
+                var hasilB = rupiah / initial / 1000;
+
+                document.getElementById("resultA").innerHTML = ("USD " + usd + " = Rp" + hasilA);
+                document.getElementById("resultB").innerHTML = ("Rp " + rupiah + " = USD " + hasilB);
+            }
+        </script>
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> AFL 2 </title>
+    </head>
+    <body>
+        <h1> JAWABAN NOMOR 2 </h1>
+
+        <script>
+        function date() {
+            var waktu = new Date();
+            var jam = waktu.getHours();
+            var tanggal = waktu.getDate();
+            var hariIndonesia = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+            var hari = hariIndonesia[waktu.getDay()];
+            var bulanIndonesia = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+            var bulan = bulanIndonesia[waktu.getMonth()];
+            var tahun = waktu.getFullYear();
+
+            if (jam >= 3 && jam < 9) {
+            alert("Selamat pagi.");
+            }
+            else if (jam >= 9 && jam < 15) {
+            alert("Selamat siang.");
+            }
+            else if (jam >= 15 && jam < 19) {
+            alert("Selamat petang.");
+            }
+            else {
+            alert("Selamat malam.");
+            }
+            document.write(hari + ", " +  tanggal + " " + bulan + " " + tahun);
+        }
+
+        date()
+        </script>
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title> AFL 2 </title>
+</head>
+<body>
+  <h1> JAWABAN NOMOR 3 </h1>
+
+  <script>
+    var numbers = [];
+
+    while (true) {
+      var userInput = prompt("Ketikkan angka 0 untuk mengakhiri\nMasukkan bilangan:");
+
+      var number = parseFloat(userInput);
+
+      if (isNaN(number)) {
+        alert("Mohon masukkan angka yang valid.");
+      } else {
+
+        numbers.push(number);
+
+        if (number === 0) {
+          break;
+        }
+      }
+    }
+
+    document.write(numbers);
+  </script>
+
+</body>
+</html>

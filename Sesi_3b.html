@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sesi 3b </title>
+    </head>
+
+    <body>
+        <table width="800" height="500" align="center">
+            <tr height="15%">
+                <td colspan="2" bgcolor="orange">
+                    <font face="arial" color="white">
+                        <h1 align="center"> SITUS PRIBADI </h1>
+                    </font>
+                </td>
+            </tr>
+            <tr valign="top" height="75%">
+                <td width="25%">
+                    <ul>
+                        <li>
+                            <a href="Sesi_3.html"> Beranda </a>
+                        </li>
+                        <li>
+                            <a href="Sesi_3a.html"> Pendidikan </a>
+                        </li>
+                        <li>
+                            <a href="Sesi_3b.html"> Kirim Pesan </a>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <p> Silahkan tuliskan pesan anda disini. Jangan lupa untuk mengisikan data yang dibutuhkan, terutama yang diberi tanda <font color="red"> * </font> sebagai wajib diisi. Kami senang dapat membantu anda.</p>
+                    <form name="form1" action="handler.php" method="get">
+                        <fieldset>
+                            <legend> Data Diri </legend>
+                            <table>
+                                <tr>
+                                    <td width="35% align="left">
+                                        <label for="nama"> Nama : </label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="nama" id="nama" size="20" maxlength="30" placeholder="Nama Lengkap" required>
+                                        <font color="red"> * </font>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <label for="alamat"> Alamat : </label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="alamat" id="alamat" size="40" maxlength=50" placeholder="Alamat tanpa nama kota">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <label for="kota"> Kota : </label>
+                                    </td>
+                                    <td>
+                                        <input list="daftarKota" name="kota" id="kota" placeholder="---">
+                                        <datalist id="daftarKota">
+                                            <option value="Surabaya">
+                                            <option value="Jakarta">
+                                            <option value="Semarang">
+                                            <option value="Yogyakarta">
+                                            <option value="Solo">
+                                            <option value="Malang">
+                                        </datalist>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend> Data Pesan </legend>
+                            <table>
+                                <tr>
+                                    <td width="35% align="left">
+                                        <label for="jenisPesan"> Jenis Pesan : </label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="jenis" id="jenisPesan" value="jenis1" checked>Keluhan
+                                        <input type="radio" name="jenis" id="jenisPesan" value="jenis2">Umpan Balik
+                                        <input type="radio" name="jenis" id="jenisPesan" value="jenis2">Informasi
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="top">
+                                        <label for="tujuan"> Ditujukan kepada : </label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="tujuan1" id="tujuan" value="tujuan1">Bagian Pemasaran <br>
+                                        <input type="checkbox" name="tujuan2" id="tujuan" value="tujuan2">Bagian Keuangan <br>
+                                        <input type="checkbox" name="tujuan3" id="tujuan" value="tujuan3">Bagian Administrasi <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="top">
+                                        <label for="pesan"> Isi Pesan : </label>
+                                    </td>
+                                    <td>
+                                        <textarea name="pesan" id="pesan" rows="5" cols="30" placeholder="Tulis pesan anda dengan rinci">
+                                        </textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+
+                        <fieldset align="center">
+                            <input type="submit" value="Kirim">
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="black" align="center">
+                    <font color="white">
+                        &copy; 2023 Reno - Universitas Ciputra
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

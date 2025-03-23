@@ -1,0 +1,80 @@
+<!-- <body>
+    <p id= "Kata 1"></p>
+
+    <script>
+        alert("Hello World");
+
+        document.write("Hello World");
+
+        var jumlah = 100
+
+        document.getElementById("Kata 1").innerHTML = jumlah ;
+
+        alert("Kalimat" / 2);
+
+        var menikah = true
+        var perempuan = false
+
+        var a = 2, b = 5 ;
+        alert(b > a) ;
+        alert(b < a) ;
+
+    </script>
+
+</body> -->
+
+<!-- <button type="button" onclick="alert('selamat datang')">
+    Silahkan Klik
+</button>
+
+<button type="button" oncontextmenu="alert('selamat datang')">
+    Silahkan Klik
+</button>
+
+<button type="button" onmouseover="alert('selamat datang')">
+    Silahkan Klik
+</button>
+
+<button type="button" onmouseout="alert('selamat datang')">
+    Silahkan Klik
+</button>
+
+<button type="button" onkeydown="alert('selamat datang')">
+    Silahkan Klik
+</button>
+
+<button type="button" onkeyup="alert('selamat datang')">
+    Silahkan Klik
+</button>
+
+<button type="button" onkeypress="alert('selamat datang')">
+    Silahkan Klik
+</button> -->
+
+<head>
+    <title>Sesi 5</title>
+    <script>
+        function beriHighlight(elemen) {
+            elemen.style.background = "yellow"
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onfocus="beriHighlight(this);">
+    <button type="button">Klik</button>
+</body>
+
+<input type="text" onblur="alert('Terima Kasih');">
+<button type="button">Klik</button>
+
+<select onchange="alert('java script');">
+    <option>Januari</option>
+    <option>Februari</option>
+    <option>Maret</option>
+</select>
+
+<form action="" method="post" onsubmit="alert('Terima Kasih');">
+    <label for="nama">Nama</label>
+    <input type="text" name="nama" id="nama" required>
+    <input type="submit" value="kirim">
+</form>
